@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoSphere</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+
+    <!--WELCOME PAGE-->
+
+    <div id="welcome-popup" class="popup">
+
+        <div class="popup-box">
+            <h1>🌍 Welcome to EcoSphere</h1>
+
+            <p>
+                Let's protect our planet together and build a greener future.
+            </p>
+
+            <button id="closePopup">Start Journey</button>
+        </div>
+
+    </div>
+    <nav>
+        <h2>🌍 EcoSphere</h2>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#climate">Climate</a></li>
+            <li><a href="#technology">Green Tech</a></li>
+            <li><a href="#calculator">Quiz</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <!--HERO-->
+
+    <section class="hero" id="home">
+        <img src="assets/images/earth.png" class="earth" alt="Earth">
+        <h1>Protect Nature, Protect Our Future</h1>
+        <p>
+            Learn about Environment, Climate Resilience and Green Technology
+            through an interactive awareness campaign.
+        </p>
+
+        <button>Start Journey</button>
+    </section>
+
+    <!--CLIMATE-->
+
+    <section class="climate" id="climate">
+
+        <h2>🌍 Climate Change</h2>
+
+        <div class="card-container">
+
+            <div class="card">
+                <i class="fas fa-temperature-high"></i>
+                <h3>Global Warming</h3>
+                <p>Rising temperatures affect ecosystems and human life.</p>
+            </div>
+
+            <div class="card">
+                <i class="fas fa-tree"></i>
+                <h3>Deforestation</h3>
+                <p>Cutting trees increases carbon dioxide in the atmosphere.</p>
+            </div>
+
+            <div class="card">
+                <i class="fas fa-water"></i>
+                <h3>Floods</h3>
+                <p>Heavy rainfall and sea level rise cause flooding.</p>
+            </div>
+
+            <div class="card">
+                <i class="fas fa-wind"></i>
+                <h3>Cyclones</h3>
+                <p>Climate change increases the intensity of storms.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--TECHNOLOGY-->
+
+    <section class="technology" id="technology">
+
+        <h2>🌱 Green Technology</h2>
+
+        <div class="tech-container">
+
+            <div class="tech-card">
+                <img src="assets/images/solar-energy.jpg" class="earth" alt="solar-energy">
+                <h3>Solar Energy</h3>
+                <p>Uses sunlight to generate clean electricity.</p>
+            </div>
+
+            <div class="tech-card">
+                <img src="assets/images/wind-energy.jpg" class="earth" alt="wind-energy">                <h3>Wind Energy</h3>
+                <p>Produces renewable energy using wind turbines.</p>
+            </div>
+
+            <div class="tech-card">
+                <img src="assets/images/VE.avif" class="earth" alt="Earth">
+                <h3>Electric Vehicles</h3>
+                <p>Reduces air pollution and carbon emissions.</p>
+            </div>
+
+            <div class="tech-card">
+                <img src="assets/images/Smart_Agriculture.avif" class="earth" alt="Earth">
+                <h3>Green Computing</h3>
+                <p>Uses energy-efficient devices and eco-friendly technology.</p>
+            </div>
+
+        </div>
+    </section>
+    <!--GREEN TECHNOLOGY-->
+    <section class="green-computing">
+       
+        <h2>💻 Green Computing</h2>
+
+        <p class="gc-intro">
+            Green Computing is the practice of using computers and technology
+            in an environmentally friendly and energy-efficient way.
+        </p>
+
+        <div class="gc-container">
+
+            <div class="gc-box">
+                <h3><span style="color:#2ecc71;">✅</span> Do's</h3>
+            <ul>
+                <li><i class="fas fa-check-circle"></i> Use energy-efficient devices</li>
+                <li><i class="fas fa-check-circle"></i>Turn off devices when not in use</li>
+                <li><i class="fas fa-check-circle"></i>Recycle old electronics</li>
+                <li><i class="fas fa-check-circle"></i>Use cloud storage wisely</li>
+            </ul>
+            
+            </div>
+
+            <div class="gc-box">
+                <h3>❌ Don'ts</h3>
+                <ul>
+                    <li><i class="fas fa-times-circle"></i>Don't waste electricity</li>
+                    <li><i class="fas fa-times-circle"></i>Don't throw e-waste in dustbins</li>
+                    <li><i class="fas fa-times-circle"></i>Avoid unnecessary printing</li>
+                    <li><i class="fas fa-times-circle"></i>Don't keep devices charging all day</li>
+                </ul>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Carbon Footprint Calculator -->
+
+    <section class="calculator" id="calculator">
+
+        <h2>🌍 Carbon Footprint Calculator</h2>
+
+        <p>
+            Estimate your daily carbon footprint and learn how eco-friendly your lifestyle is.
+        </p>
+
+        <div class="calculator-box">
+
+            <input type="number" id="travel" placeholder="Travel Distance (km/day)">
+
+            <input type="number" id="electricity" placeholder="Electricity Usage (Units/month)">
+
+            <button onclick="calculateCarbon()">
+                Calculate
+            </button>
+
+            <h3 id="result"></h3>
+
+        </div>
+
+    </section>
+    <!-- Contact Section -->
+
+    <section class="contact" id="contact">
+
+        <h2>📞 Contact Us</h2>
+
+       <p>Together,Let's Build a Greener and More Sustaible Future.</p>
+
+        <div class="contact-info">
+
+            <p><i class="fas fa-envelope"></i> kansulfsd@gmail.com</p>
+
+            <p><i class="fas fa-phone"></i> 8870082908</p>
+
+            <p><i class="fas fa-map-marker-alt"></i> Trichy, Tamil Nadu</p>
+
+        </div>
+
+    </section>
+
+   <footer>
+
+        <div class="footer-content">
+
+            <h2>🌍 EcoSphere</h2>
+
+            <p class="footer-tagline">
+            Green Computing for a Sustainable Future
+            </p>
+
+            <div class="footer-line"></div>
+
+            <p>© 2026 EcoSphere. All Rights Reserved.</p>
+
+            <p>Designed & Developed by <strong>Kansul Mahariba S</strong></p>
+
+        </div>
+
+    </footer>
+    
+    <script src="script.js"></script>
+
+</body>
+
+</html>
