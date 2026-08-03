@@ -541,3 +541,71 @@ footer p{
 footer strong{
     color:#fff;
 }
+
+/* ===== Mobile Responsive ===== */
+@media (max-width: 768px) {
+
+    body{
+        overflow-x:hidden;
+    }
+
+    nav{
+        padding:15px;
+    }
+
+    nav ul{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        gap:12px;
+    }
+
+    .hero{
+        height:auto;
+        padding:60px 20px;
+    }
+
+    .hero h1{
+        font-size:32px;
+        line-height:1.3;
+    }
+
+    .hero p{
+        font-size:16px;
+    }
+
+    .card-container,
+    .tech-container,
+    .gc-container{
+        grid-template-columns:1fr;
+    }
+
+    .card,
+    .tech-card,
+    .gc-box{
+        width:100%;
+    }
+
+    .tech-card img{
+        height:180px;
+    }
+
+    .calculator-box,
+    .contact-info{
+        width:100%;
+        padding:20px;
+    }
+
+    input,
+    button{
+        width:100%;
+    }
+
+    footer h2{
+        font-size:24px;
+    }
+
+    footer p{
+        font-size:14px;
+    }
+}
