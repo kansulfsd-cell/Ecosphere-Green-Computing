@@ -44,20 +44,6 @@ navLinks.forEach(link => {
 
 });
 
-// Console Message
-console.log("EcoSphere Project Loaded Successfully 🌍");
-
-
-const cards = document.querySelectorAll(".card");
-
-cards.forEach(card => {
-
-    card.addEventListener("click", () => {
-
-        alert("🌱 Every action counts! Together we can protect our environment.");
-
-    });
-
 });
 
 function calculateCarbon(){
