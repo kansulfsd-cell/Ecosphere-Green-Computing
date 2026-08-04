@@ -737,3 +737,66 @@ font-size:15px;
 }
 
 }
+
+/* ===========================
+   PROJECT RESOURCES
+=========================== */
+
+.resources{
+    padding:80px 8%;
+    text-align:center;
+}
+
+.resources h2{
+    font-size:40px;
+    color:#7CFC00;
+    margin-bottom:40px;
+}
+
+.resource-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.resource-card{
+    background:rgba(255,255,255,.08);
+    border-radius:20px;
+    padding:30px;
+    box-shadow:0 10px 30px rgba(0,0,0,.25);
+    transition:.3s;
+}
+
+.resource-card:hover{
+    transform:translateY(-8px);
+}
+
+.resource-card h3{
+    color:#7CFC00;
+    margin-bottom:15px;
+}
+
+.resource-card p{
+    color:#ddd;
+    margin-bottom:20px;
+}
+
+.resource-card a{
+    display:inline-block;
+    padding:12px 24px;
+    background:#7CFC00;
+    color:#000;
+    text-decoration:none;
+    border-radius:30px;
+    font-weight:bold;
+}
+
+.resource-card a:hover{
+    background:#98FB98;
+}
+
+@media(max-width:768px){
+    .resource-container{
+        grid-template-columns:1fr;
+    }
+}
