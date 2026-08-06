@@ -44,8 +44,6 @@ navLinks.forEach(link => {
 
 });
 
-});
-
 function calculateCarbon(){
 
     let travelInput = document.getElementById("travel").value;
